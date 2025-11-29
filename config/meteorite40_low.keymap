@@ -34,7 +34,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1 2>; /* Q + W */
+            key-positions = <10 11 12>; /* Q + W */
             layers = <0>;
         };
 
