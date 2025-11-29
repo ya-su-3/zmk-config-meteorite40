@@ -32,15 +32,9 @@
             layers = <0>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <20 21>; /* Z + X */
-            layers = <0>;
-        };
-
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>; /* Q + W */
+            key-positions = <0 1 2>; /* Q + W */
             layers = <0>;
         };
 
@@ -72,6 +66,11 @@
             bindings = <&kp MINUS>;
             key-positions = <9 8>;
             layers = <0>;
+        };
+
+        Layer3 {
+            bindings = <&to 3>;
+            key-positions = <34 37>;
         };
     };
 
