@@ -66,11 +66,6 @@
             key-positions = <9 8>;
             layers = <0>;
         };
-
-        Layer3 {
-            bindings = <&to 3>;
-            key-positions = <34 37>;
-        };
     };
 
     keymap {
@@ -93,7 +88,7 @@
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &kp EXCL         &kp AT           &kp HASH           &kp DLLR         &kp PRCNT        &kp CARET        &kp AMPS         &kp ASTRK        &kp SEMICOLON    &kp SQT
 &none            &kp COLON        &kp DOUBLE_QUOTES  &kp SLASH        &kp MINUS        &mkp MB4         &mkp MB5         &kp PLUS         &kp EQUAL        &kp COMMA        &kp PERIOD  &none
-&trans           &trans           &trans             &trans           &kp BACKSPACE    &none            &trans           &trans
+&trans           &trans           &mo 3              &trans           &kp BACKSPACE    &none            &trans           &trans
             >;
         };
 
@@ -101,9 +96,9 @@
             display-name = "NUM / ARROW";
             bindings = <
 &none           &none           &mmv MOVE_UP    &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT   &kp UP_ARROW  &kp C_VOL_DN     &kp C_VOL_UP
-&msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT  &kp DOWN      &kp RIGHT        &msc SCRL_UP
+&msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LBKT              &kp RBKT               &kp LEFT  &kp DOWN      &kp RIGHT        &msc SCRL_UP
 &msc SCRL_LEFT  &none           &none           &kp LEFT_SHIFT   &kp SEMICOLON         &mkp MB4               &mkp MB5  &kp SQT       &kp RIGHT_SHIFT  &none         &none  &msc SCRL_RIGHT
-&trans          &trans          &trans          &trans           &kp BACKSPACE         &trans                 &trans    &trans
+&trans          &trans          &trans          &trans           &kp BACKSPACE         &mo 3                  &trans    &trans
             >;
         };
 
@@ -112,7 +107,7 @@
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &bt BT_CLR_ALL  &bt BT_CLR_ALL  &none         &none         &none
-&kp F11  &kp F12  &none   &none   &none    &none           &none           &none         &none         &none         &none  &none
+&kp F11  &kp F12  &none   &none   &none    &none           &none           &none         &none         &none         &none  &sys_reset
 &trans   &trans   &trans  &trans  &trans   &trans          &trans          &trans
             >;
         };
