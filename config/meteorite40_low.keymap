@@ -85,10 +85,10 @@
         layer_1 {
             display-name = "SYMBOLS";
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&kp EXCL         &kp AT           &kp HASH           &kp DLLR         &kp PRCNT        &kp CARET        &kp AMPS         &kp ASTRK        &kp SEMICOLON    &kp SQT
-&none            &kp COLON        &kp DOUBLE_QUOTES  &kp SLASH        &kp MINUS        &mkp MB4         &mkp MB5         &kp PLUS         &kp EQUAL        &kp COMMA        &kp PERIOD  &none
-&trans           &trans           &mo 3              &trans           &kp BACKSPACE    &none            &trans           &trans
+&kp N1    &kp N2     &kp N3             &kp N4     &kp NUMBER_5   &kp N6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
+&kp EXCL  &kp AT     &kp HASH           &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS      &kp ASTRK     &kp SEMICOLON  &kp SQT
+&none     &kp COLON  &kp DOUBLE_QUOTES  &kp SLASH  &kp MINUS      &mkp MB4   &mkp MB5      &kp PLUS      &kp EQUAL      &kp COMMA     &kp PERIOD  &none
+&trans    &trans     &mo 3              &trans     &kp BACKSPACE  &none      &trans        &trans
             >;
         };
 
