@@ -70,15 +70,13 @@
         };
     };
 
+    moC: moC {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp INT3>, <&kp NON_US_BACKSLASH>;
 
-        moC: moC {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp INT3>, <&kp NON_US_BACKSLASH>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
 
     behaviors {
     };
@@ -102,7 +100,7 @@
             bindings = <
 &kp N1    &kp N2     &kp N3             &kp N4     &kp NUMBER_5   &kp N6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp N0
 &kp EXCL  &kp AT     &kp HASH           &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS      &kp ASTRK     &kp SEMICOLON  &kp SQT
-&none     &kp COLON  &kp DOUBLE_QUOTES  &kp SLASH  &kp MINUS      &mkp MB4   &mkp MB5      &kp PLUS      &kp EQUAL      &kp COMMA  &kp PERIOD  &none
+&none     &kp COLON  &kp DOUBLE_QUOTES  &kp SLASH  &kp MINUS      &mkp MB4   &mkp MB5      &kp PLUS      &kp EQUAL      &kp COMMA  &kp PERIOD  &kp BSLH
 &trans    &trans     &mo 3              &trans     &kp BACKSPACE  &none      &trans        &trans
             >;
         };
