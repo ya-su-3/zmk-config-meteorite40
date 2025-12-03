@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
- #define JP_PIPE         LS(0x89)          // |
+#define JP_PIPE         LS(0x89)          // |
 
 &mt {
     flavor = "tap-preferred"; // change hold to tap
@@ -68,7 +68,6 @@
             key-positions = <9 8>;
             layers = <0>;
         };
-
     };
 
     moC: moC {
@@ -79,8 +78,8 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-
-
+    behaviors {
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -89,10 +88,10 @@
         win_default_layer {
             display-name = "BASE";
             bindings = <
-&mt ESC Q  &kp W             &kp E        &kp R             &kp T                  &kp Y       &kp U              &kp I     &kp O              &kp P
-&kp A      &kp S             &kp D        &kp F             &kp G                  &kp H       &kp J              &kp K     &kp L              &kp SEMICOLON
-&kp Z      &kp X             &mt LCTRL C  &mt LEFT_SHIFT V  &kp B                  &mkp MB1    &mkp MB2           &kp N     &mt RIGHT_SHIFT M  &mt RCTRL COMMA  &kp DOT  &lt 4 SLASH
-&kp GRAVE  &mt LEFT_ALT TAB  &lt 2 SPACE  &mt LCTRL SPACE   &mt RIGHT_SHIFT ENTER  &lt 1 BSPC  &mt RIGHT_GUI DEL  &kp PIPE
+&mt ESC Q  &kp W             &kp E        &kp R             &kp T                  &kp Y       &kp U              &kp I  &kp O              &kp P
+&kp A      &kp S             &kp D        &kp F             &kp G                  &kp H       &kp J              &kp K  &kp L              &kp SEMICOLON
+&kp Z      &kp X             &mt LCTRL C  &mt LEFT_SHIFT V  &kp B                  &mkp MB1    &mkp MB2           &kp N  &mt RIGHT_SHIFT M  &mt RCTRL COMMA  &kp DOT  &lt 4 SLASH
+&kp GRAVE  &mt LEFT_ALT TAB  &lt 2 SPACE  &mt LCTRL SPACE   &mt RIGHT_SHIFT ENTER  &lt 1 BSPC  &mt RIGHT_GUI DEL  &moC
             >;
         };
 
