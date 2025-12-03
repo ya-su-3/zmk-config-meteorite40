@@ -68,14 +68,16 @@
             key-positions = <9 8>;
             layers = <0>;
         };
-    };
 
-    moC: moC {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp INT3>, <&kp NON_US_BACKSLASH>;
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        moC: moC {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp INT3>, <&kp NON_US_BACKSLASH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
     };
 
     behaviors {
