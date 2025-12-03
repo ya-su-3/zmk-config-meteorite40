@@ -68,6 +68,7 @@
             key-positions = <9 8>;
             layers = <0>;
         };
+    };
 
 
         moC: moC {
@@ -78,7 +79,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-    };
 
     behaviors {
     };
